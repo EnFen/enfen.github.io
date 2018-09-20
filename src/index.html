@@ -6,38 +6,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.scss" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/solid.css" integrity="sha384-VGP9aw4WtGH/uPAOseYxZ+Vz/vaTb1ehm1bwx92Fm8dTrE+3boLfF1SpAtB1z7HW"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/fontawesome.css" integrity="sha384-1rquJLNOM3ijoueaaeS5m+McXPJCGdr5HcA03/VHXxcp2kX2sUrQDmFc3jR5i/C7"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
 
 </head>
 
 <body>
     <header>
         <div id="logo"><a href="index.html"><img src="logo.png" alt="Nathan Fenimore Logo"></a></div>
-        <nav>
-            <ul>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="about.html">About</a></li>
+        <div id="hamburger"><i class="fas fa-bars"></i>
+            <nav id="primary-nav">
                 <ul>
-                    <li><a href="about.html#work">Work</a></li>
-                    <li><a href="about.html#education">Education</a></li>
-                    <li><a href="about.html#interests">Interests</a></li>
-                    <li><a href="about.html#technical-expertise">Technical Expertise</a></li>
-                    <li><a href="about.html#location">Location</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="dropdown-menu"><a href="about.html">About</a>
+                        <ul class="dropdown-items">
+                            <li><a href="about.html#work">Work</a></li>
+                            <li><a href="about.html#education">Education</a></li>
+                            <li><a href="about.html#interests">Interests</a></li>
+                            <li><a href="about.html#technical-expertise">Technical Expertise</a></li>
+                            <li><a href="about.html#location">Location</a></li>
+                        </ul>
+                    </li>
                 </ul>
-            </ul>
-        </nav>
+            </nav>
+        </div>
     </header>
 
-    <section class="photo">
-        <div id="hexagon"><img src="photo.jpg" alt="Nathan Fenimore Photo"></div>
-        <caption>Nathan Fenimore</caption>
-    </section>
-
     <main>
-        <section class="feature">
+        <section id="photo">
+            <img src="https://via.placeholder.com/250x250" alt="Nathan Fenimore Photo">
+            <div class="caption">Nathan Fenimore</div>
+        </section>
+        <section id="greeting">
             <h2>GREETINGS MORTAL!</h2>
-            <p>Hi! I'm Nathan, and I can help you with your web design and development needs.</p>
-            <p>Find out more about me on the 'About' page, or get in touch through the 'Contact' page.</p>
+            <div class="feature">
+                <div class="info">
+                    <p>Hi! I'm <strong>Nathan</strong>, and I can help you with your web design and development needs.</p>
+                </div>
+                <div class="icons">
+                    <p>Find out more about me on the 'About' page, or get in touch through the 'Contact' page.</p>
+                </div>
+            </div>
         </section>
     </main>
 
