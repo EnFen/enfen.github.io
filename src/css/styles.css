@@ -20,6 +20,17 @@ body {
   grid-gap: 3rem;
 }
 
+@media screen and (min-width: 1026px) {
+  body {
+    -ms-grid-rows: 100px minmax(calc(100vh - 250px), auto) 100px 50px;
+        grid-template-rows: 100px minmax(calc(100vh - 250px), auto) 100px 50px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "header" "main" "contact" "footer";
+    grid-gap: 0;
+  }
+}
+
 main {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
@@ -36,6 +47,16 @@ main {
   }
 }
 
+@media screen and (min-width: 1026px) {
+  #home-page {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: "greeting" "photo";
+  }
+}
+
 @media screen and (min-width: 501px) and (max-width: 1025px) {
   #about-page #about-scroll {
     max-width: 700px;
@@ -43,6 +64,32 @@ main {
     height: 550px;
     overflow: auto;
   }
+}
+
+@media screen and (min-width: 1026px) {
+  #about-page #about-scroll {
+    max-width: 900px;
+    margin: 0 auto;
+    height: 550px;
+    overflow: auto;
+    margin-top: 4.5rem;
+  }
+}
+
+#about-page ::-webkit-scrollbar {
+  width: 5px;
+}
+
+#about-page ::-webkit-scrollbar-track {
+  background: #F2F2F2;
+}
+
+#about-page ::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+#about-page ::-webkit-scrollbar-thumb:hover {
+  background: #FF9F33;
 }
 
 #about-page .feature .info {
@@ -116,6 +163,29 @@ header #logo {
   }
 }
 
+@media screen and (min-width: 1026px) {
+  header #hamburger {
+    width: 100%;
+  }
+  header #hamburger #primary-nav {
+    width: 100%;
+  }
+  header #hamburger #primary-nav ul:not(.dropdown-items) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header #hamburger #primary-nav ul:not(.dropdown-items) li:first-child {
+    display: none;
+  }
+  header #hamburger #primary-nav ul:not(.dropdown-items) li:nth-child(2) {
+    margin-left: auto;
+  }
+  header #hamburger i {
+    display: none;
+  }
+}
+
 footer {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
@@ -143,21 +213,13 @@ footer {
 
 #photo {
   grid-area: photo;
-  height: 250px;
-  width: 250px;
   margin: 0 auto;
 }
 
 #photo img {
   border-radius: 50%;
-}
-
-@media screen and (min-width: 501px) and (max-width: 1025px) {
-  #photo {
-    bottom: 100px;
-    z-index: 10;
-    margin-bottom: -100px;
-  }
+  height: 250px;
+  width: 250px;
 }
 
 #photo .caption {
@@ -180,6 +242,41 @@ footer {
   left: calc(50% - 100px);
 }
 
+@media screen and (max-width: 500px) {
+  #photo {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 1025px) {
+  #photo {
+    bottom: 100px;
+    z-index: 10;
+    margin-bottom: -100px;
+  }
+}
+
+@media screen and (min-width: 1026px) {
+  #photo {
+    position: absolute;
+    left: 6rem;
+    bottom: -7rem;
+    z-index: 10;
+  }
+  #photo img {
+    height: 350px;
+    width: 350px;
+  }
+  #photo .caption {
+    font-size: 1.5rem;
+    border-radius: 10px;
+    bottom: 40px;
+    width: 300px;
+    left: calc(50% - 150px);
+  }
+}
+
 h2 {
   padding: 3rem;
 }
@@ -187,6 +284,13 @@ h2 {
 @media screen and (min-width: 501px) and (max-width: 1025px) {
   section:not(#photo) {
     max-width: 700px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1026px) {
+  section:not(#photo) {
+    max-width: 900px;
     margin: 0 auto;
   }
 }
@@ -251,6 +355,24 @@ h2 {
   }
 }
 
+@media screen and (min-width: 1026px) {
+  .feature .info {
+    padding: 3rem;
+    padding-right: 1.5rem;
+    min-height: 450px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+}
+
 .feature .icons {
   background-color: #F2F2F2;
 }
@@ -267,6 +389,24 @@ h2 {
     padding: 3rem;
     padding-left: 1.5rem;
     min-height: 350px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1026px) {
+  .feature .icons {
+    padding: 3rem;
+    padding-left: 1.5rem;
+    min-height: 450px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -311,6 +451,16 @@ h2 {
   }
 }
 
+@media screen and (min-width: 1026px) {
+  .feature .icons ul li {
+    padding: 1.5rem;
+  }
+}
+
+#secondary-nav {
+  display: none;
+}
+
 nav {
   text-align: center;
 }
@@ -327,6 +477,23 @@ nav {
 @media screen and (max-width: 500px) {
   #hamburger:hover > nav {
     display: block;
+  }
+}
+
+@media screen and (min-width: 1026px) {
+  #secondary-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    background-color: #F2F2F2;
+    padding: 0 50px;
+  }
+  #secondary-nav ul {
+    margin-left: auto;
   }
 }
 
@@ -351,6 +518,18 @@ nav {
   .dropdown-menu:hover .dropdown-items {
     width: 20rem;
   }
+  .dropdown-menu:hover .dropdown-items a {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1026px) {
+  .dropdown-menu:hover .dropdown-items {
+    width: 20rem;
+  }
+  .dropdown-menu:hover .dropdown-items a {
+    width: 100%;
+  }
 }
 
 nav {
@@ -369,6 +548,18 @@ nav ul li a {
   display: block;
   padding: 1.5rem;
   text-decoration: none;
+}
+
+@media screen and (min-width: 501px) and (max-width: 1025px) {
+  nav ul li a {
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 1026px) {
+  nav ul li a {
+    width: 200px;
+  }
 }
 
 nav ul li a:visited {
@@ -437,6 +628,12 @@ h2 {
   }
 }
 
+@media screen and (min-width: 1026px) {
+  .feature .icons ul li i {
+    font-size: 7rem;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .feature .icons ul li img {
     width: 100px;
@@ -446,6 +643,12 @@ h2 {
 @media screen and (min-width: 501px) and (max-width: 1025px) {
   .feature .icons ul li img {
     width: 100px;
+  }
+}
+
+@media screen and (min-width: 1026px) {
+  .feature .icons ul li img {
+    width: 110px;
   }
 }
 

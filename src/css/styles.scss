@@ -12,14 +12,31 @@ body {
     grid-template-columns: 1fr;
     grid-template-areas: "header""main""footer";
     grid-gap: 3rem;
+
+    @include desktop {
+        grid-template-rows: 100px minmax(calc(100vh - 250px), auto) 100px 50px;
+        grid-template-columns: 1fr;
+        grid-template-areas: "header""main""contact""footer";
+        grid-gap: 0;
+    }
 }
 
 main {
     grid-area: main;
+
+    @include desktop {
+        // margin-bottom: -3rem;
+    }
 }
 
 #home-page {
     @include tablet {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-areas: "greeting""photo";
+    }
+
+    @include desktop {
         display: grid;
         grid-template-rows: auto auto;
         grid-template-areas: "greeting""photo";
@@ -34,6 +51,34 @@ main {
             height: 550px;
             overflow: auto;
         }
+    }
+
+    @include desktop {
+        #about-scroll {
+            max-width: 900px;
+            margin: 0 auto;
+            height: 550px;
+            overflow: auto;
+            margin-top: 4.5rem;
+        }
+    }
+
+    // Restyle scrollbar
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: $light-grey;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+        // height: 142px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: $orange;
     }
 
     .feature {
@@ -89,8 +134,6 @@ header {
             #primary-nav {
                 width: 100%;
 
-
-
                 ul:not(.dropdown-items) {
                     display: flex;
 
@@ -105,11 +148,36 @@ header {
             display: none;
         }
     }
+
+    @include desktop {
+        #hamburger {
+            width: 100%;
+
+            #primary-nav {
+                width: 100%;
+
+                ul:not(.dropdown-items) {
+                    display: flex;
+
+                    li:first-child {
+                        display: none;
+                    }
+
+                    li:nth-child(2) {
+                        margin-left: auto;
+                    }
+                }
+            }
+        }
+
+        #hamburger i {
+            display: none;
+        }
+    }
 }
 
 footer {
     grid-area: footer;
-
 
     @include center;
 }
@@ -126,18 +194,12 @@ footer {
 
 #photo {
     grid-area: photo;
-    height: 250px;
-    width: 250px;
     margin: 0 auto;
 
     img {
         border-radius: 50%;
-    }
-
-    @include tablet {
-        bottom: 100px;
-        z-index: 10;
-        margin-bottom: -100px;
+        height: 250px;
+        width: 250px;
     }
 
     .caption {
@@ -152,6 +214,37 @@ footer {
         width: 200px;
         left: calc(50% - 100px);
     }
+
+    @include mobile {
+        height: 250px;
+        width: 250px;
+    }
+
+    @include tablet {
+        bottom: 100px;
+        z-index: 10;
+        margin-bottom: -100px;
+    }
+
+    @include desktop {
+        position: absolute;
+        left: 6rem;
+        bottom: -7rem;
+        z-index: 10;
+
+        img {
+            height: 350px;
+            width: 350px;
+        }
+
+        .caption {
+            font-size: 1.5rem;
+            border-radius: 10px;
+            bottom: 40px;
+            width: 300px;
+            left: calc(50% - 150px);
+        }
+    }
 }
 
 h2 {
@@ -161,6 +254,11 @@ h2 {
 section:not(#photo) {
     @include tablet {
         max-width: 700px;
+        margin: 0 auto;
+    }
+
+    @include desktop {
+        max-width: 900px;
         margin: 0 auto;
     }
 }
@@ -190,6 +288,14 @@ section:not(#photo) {
 
             @include center;
         }
+
+        @include desktop {
+            padding: 3rem;
+            padding-right: 1.5rem;
+            min-height: 450px;
+
+            @include center;
+        }
     }
 
     .icons {
@@ -204,6 +310,14 @@ section:not(#photo) {
             padding: 3rem;
             padding-left: 1.5rem;
             min-height: 350px;
+
+            @include center;
+        }
+
+        @include desktop {
+            padding: 3rem;
+            padding-left: 1.5rem;
+            min-height: 450px;
 
             @include center;
         }
@@ -226,14 +340,23 @@ section:not(#photo) {
                     padding: 1rem;
                 }
 
+                @include desktop {
+                    padding: 1.5rem;
+                }
+
             }
         }
     }
 }
 
 //NAVIGATION
+#secondary-nav {
+    display: none;
+}
+
 nav {
     text-align: center;
+
 
     @include mobile {
         display: none;
@@ -250,6 +373,19 @@ nav {
     }
 }
 
+@include desktop {
+    #secondary-nav {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        background-color: $light-grey;
+        padding: 0 50px;
+
+        ul {
+            margin-left: auto;
+        }
+    }
+}
 
 .dropdown-items {
     display: none;
@@ -269,6 +405,18 @@ nav {
 
     @include tablet {
         width: 20rem;
+
+        a {
+            width: 100%;
+        }
+    }
+
+    @include desktop {
+        width: 20rem;
+
+        a {
+            width: 100%;
+        }
     }
 }
 
@@ -290,6 +438,14 @@ nav {
                 padding: 1.5rem;
                 text-decoration: none;
 
+                @include tablet {
+                    width: 200px;
+                }
+
+                @include desktop {
+                    width: 200px;
+                }
+
                 &:visited {
                     color: $dark-grey;
                 }
@@ -303,29 +459,10 @@ nav {
     }
 }
 
-// See if the following  an be achieved with box shadows
-
-// .dropdown-menu a {
-//     border: 2px solid $dark-grey;
-//     border-top: none;
-// }
-
 .dropdown-items li a {
     background-color: $light-grey;
     opacity: 0.75;
-    //     border-left: 2px solid $dark-grey;
-    //     border-right: 2px solid $dark-grey;
-    //     border-top: none;
-    //     border-bottom: none;
 }
-
-// .dropdown-items li:first-child a {
-//     border-top: none;
-// }
-
-// .dropdown-items li:last-child a {
-//     border-bottom: 2px solid $dark-grey;
-// }
 
 .caption {
     font-family: $body-font;
@@ -380,6 +517,10 @@ h2 {
                     @include tablet {
                         font-size: 5rem;
                     }
+
+                    @include desktop {
+                        font-size: 7rem;
+                    }
                 }
 
                 img {
@@ -389,6 +530,10 @@ h2 {
 
                     @include tablet {
                         width: 100px;
+                    }
+
+                    @include desktop {
+                        width: 110px;
                     }
                 }
             }
