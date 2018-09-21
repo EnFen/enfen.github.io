@@ -12,8 +12,8 @@ body {
   background-color: #404040;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 100px minmax(calc(100vh - 150px), auto) 50px;
-      grid-template-rows: 100px minmax(calc(100vh - 150px), auto) 50px;
+  -ms-grid-rows: 100px minmax(calc(100vh - 150px - 6rem), auto) 50px;
+      grid-template-rows: 100px minmax(calc(100vh - 150px - 6rem), auto) 50px;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
       grid-template-areas: "header" "main" "footer";
@@ -26,18 +26,44 @@ main {
   grid-area: main;
 }
 
-#home-page {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: auto auto;
-      grid-template-rows: auto auto;
-      grid-template-areas: "greeting" "photo";
+@media screen and (min-width: 501px) and (max-width: 1025px) {
+  #home-page {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: "greeting" "photo";
+  }
 }
 
-#greeting {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: greeting;
+@media screen and (min-width: 501px) and (max-width: 1025px) {
+  #about-page #about-scroll {
+    max-width: 700px;
+    margin: 0 auto;
+    height: 550px;
+    overflow: auto;
+  }
+}
+
+#about-page .feature .info {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#about-page .feature .info ul li {
+  font-size: 0.9em;
+}
+
+@media screen and (min-width: 501px) and (max-width: 1025px) {
+  #about-page .feature .info {
+    min-height: 410px;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 1025px) {
+  #about-page .feature .icons {
+    min-height: 410px;
+  }
 }
 
 header {
@@ -111,9 +137,11 @@ footer {
   background-color: #F2F2F2;
 }
 
+#greeting {
+  grid-area: greeting;
+}
+
 #photo {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
   grid-area: photo;
   height: 250px;
   width: 250px;
@@ -126,10 +154,9 @@ footer {
 
 @media screen and (min-width: 501px) and (max-width: 1025px) {
   #photo {
-    position: absolute;
-    bottom: -20px;
-    left: calc(50% - 250px / 2);
+    bottom: 100px;
     z-index: 10;
+    margin-bottom: -100px;
   }
 }
 
@@ -231,6 +258,7 @@ h2 {
 @media screen and (max-width: 500px) {
   .feature .icons {
     padding: 1.5rem 3rem 3rem;
+    width: 100%;
   }
 }
 
