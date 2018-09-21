@@ -1,4 +1,6 @@
-# Portfolio Project
+# Nathan Fenimore Portfolio Project
+
+Link to repository: https://github.com/EnFen/portfolio_project
 
 ## Site-map
 index.html (Home)
