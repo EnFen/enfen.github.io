@@ -21,17 +21,6 @@ body {
   grid-gap: 3rem;
 }
 
-@media screen and (min-width: 1026px) {
-  body {
-    -ms-grid-rows: 100px minmax(calc(100vh - 230px), auto) 100px 30px;
-        grid-template-rows: 100px minmax(calc(100vh - 230px), auto) 100px 30px;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-        grid-template-areas: "header" "main" "contact" "footer";
-    grid-gap: 0;
-  }
-}
-
 main {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
@@ -71,9 +60,8 @@ main {
   #about-page #about-scroll {
     max-width: 700px;
     margin: 0 auto;
-    height: calc(100vh - 230px - 6rem);
+    height: calc(100vh - 150px - 6rem);
     overflow: auto;
-    margin-top: 3rem;
   }
 }
 
@@ -90,7 +78,7 @@ main {
 }
 
 #about-page ::-webkit-scrollbar-thumb:hover {
-  background: #FF9F33;
+  background: #FF9900;
 }
 
 #about-page .feature .info {
@@ -129,11 +117,20 @@ header {
 }
 
 header #logo {
-  height: 60px;
+  height: 75px;
+}
+
+header #logo a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header #logo a img {
-  height: 60px;
+  height: 75px;
 }
 
 @media screen and (max-width: 500px) {
@@ -145,7 +142,7 @@ header #logo a img {
   }
   header #hamburger i {
     font-size: 50px;
-    color: #404040;
+    color: #FF9900;
   }
 }
 
@@ -171,7 +168,7 @@ header #logo a img {
 
 @media screen and (min-width: 1026px) {
   header {
-    padding: 0 100px 0 12rem;
+    padding: 0 100px 0 8rem;
   }
   header #hamburger {
     width: 100%;
@@ -185,9 +182,6 @@ header #logo a img {
     display: flex;
   }
   header #hamburger #primary-nav ul:not(.dropdown-items) li:first-child {
-    display: none;
-  }
-  header #hamburger #primary-nav ul:not(.dropdown-items) li:nth-child(2) {
     margin-left: auto;
   }
   header #hamburger i {
@@ -213,7 +207,7 @@ footer {
 
 header,
 footer {
-  background-color: #F2F2F2;
+  background-color: #000066;
 }
 
 #greeting {
@@ -229,13 +223,13 @@ footer {
   border-radius: 50%;
   height: 250px;
   width: 250px;
+  border: 4px solid #FF9900;
 }
 
 #photo .caption {
-  font-size: 1.5rem;
   position: absolute;
-  background-color: #000066;
-  color: #F2F2F2;
+  background-color: #FF9900;
+  color: #000066;
   border-radius: 20px;
   bottom: 20px;
   padding: 0.5rem 0;
@@ -273,7 +267,7 @@ footer {
   #photo {
     position: absolute;
     left: 6rem;
-    bottom: -7rem;
+    bottom: -5rem;
     z-index: 10;
   }
 }
@@ -311,12 +305,6 @@ h2 {
   #contact {
     max-width: 700px;
     margin: 0 auto;
-  }
-}
-
-@media screen and (min-width: 1026px) {
-  #greeting {
-    margin-top: 3rem;
   }
 }
 
@@ -505,23 +493,6 @@ nav {
   }
 }
 
-@media screen and (min-width: 1026px) {
-  #secondary-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 100%;
-    background-color: #F2F2F2;
-    padding: 0 100px;
-  }
-  #secondary-nav ul {
-    margin-left: auto;
-  }
-}
-
 .dropdown-items {
   display: none;
   background-color: #404040;
@@ -557,6 +528,19 @@ nav {
   }
 }
 
+#logo a {
+  text-decoration: none;
+}
+
+#wordmark {
+  color: #FF9900;
+  margin-left: 1rem;
+}
+
+#wordmark span {
+  color: #F2F2F2;
+}
+
 nav {
   font-family: "Orbitron", sans-serif;
   font-size: 1.5rem;
@@ -568,8 +552,8 @@ nav ul li {
 }
 
 nav ul li a {
-  background-color: #F2F2F2;
-  color: #404040;
+  background-color: #000066;
+  color: #FF9900;
   display: block;
   padding: 1.5rem;
   text-decoration: none;
@@ -588,29 +572,39 @@ nav ul li a {
 }
 
 nav ul li a:visited {
-  color: #404040;
+  color: #FF9900;
 }
 
 nav ul li a:hover {
-  background-color: #404040;
-  color: #F2F2F2;
+  background-color: #FF9900;
+  color: #000066;
 }
 
 .dropdown-items li a {
+  color: #404040;
   background-color: #F2F2F2;
   opacity: 0.75;
 }
 
+.dropdown-items li a:visited {
+  color: #404040;
+}
+
+.dropdown-items li a:hover {
+  background-color: #FF9900;
+  color: #000066;
+}
+
 .caption {
-  font-family: "Catamaran", sans-serif;
+  font-family: "Orbitron", sans-serif;
 }
 
 h2 {
-  color: #F2F2F2;
+  color: #FF9900;
   font-family: "Orbitron", sans-serif;
   font-size: 2.5rem;
   text-align: center;
-  background-color: #404040;
+  background-color: #000066;
 }
 
 .feature {
@@ -679,7 +673,7 @@ h2 {
 }
 
 footer {
-  color: #404040;
+  color: #FF9900;
   font-family: "Catamaran", sans-serif;
 }
 /*# sourceMappingURL=styles.css.map */

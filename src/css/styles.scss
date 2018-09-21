@@ -7,19 +7,11 @@
 body {
     background-color: $dark-grey;
     background-image: url('http://cdn.backgroundhost.com/backgrounds/subtlepatterns/bo_play_pattern.png');
-    // background-image: url('../img/connectwork.png');
     display: grid;
     grid-template-rows: 100px minmax(calc(100vh - 150px - 6rem), auto) 50px;
     grid-template-columns: 1fr;
     grid-template-areas: "header""main""footer";
     grid-gap: 3rem;
-
-    @include desktop {
-        grid-template-rows: 100px minmax(calc(100vh - 230px), auto) 100px 30px;
-        grid-template-columns: 1fr;
-        grid-template-areas: "header""main""contact""footer";
-        grid-gap: 0;
-    }
 }
 
 main {
@@ -58,9 +50,8 @@ main {
         #about-scroll {
             max-width: 700px;
             margin: 0 auto;
-            height: calc(100vh - 230px - 6rem);
+            height: calc(100vh - 150px - 6rem);
             overflow: auto;
-            margin-top: 3rem;
         }
     }
 
@@ -114,11 +105,14 @@ header {
     padding: 0 50px 0 100px;
 
     #logo {
-        height: 60px;
+        height: 75px;
 
         a {
+            display: flex;
+            align-items: center;
+
             img {
-                height: 60px;
+                height: 75px;
             }
         }
     }
@@ -130,7 +124,7 @@ header {
 
         #hamburger i {
             font-size: 50px;
-            color: $dark-grey;
+            color: $orange;
         }
     }
 
@@ -158,7 +152,7 @@ header {
     }
 
     @include desktop {
-        padding: 0 100px 0 12rem;
+        padding: 0 100px 0 8rem;
 
         #hamburger {
             width: 100%;
@@ -170,10 +164,6 @@ header {
                     display: flex;
 
                     li:first-child {
-                        display: none;
-                    }
-
-                    li:nth-child(2) {
                         margin-left: auto;
                     }
                 }
@@ -195,7 +185,7 @@ footer {
 
 header,
 footer {
-    background-color: $light-grey;
+    background-color: $dark-blue;
 }
 
 #greeting {
@@ -210,13 +200,13 @@ footer {
         border-radius: 50%;
         height: 250px;
         width: 250px;
+        border: 4px solid $orange;
     }
 
     .caption {
-        font-size: 1.5rem;
         position: absolute;
-        background-color: $dark-blue;
-        color: $light-grey;
+        background-color: $orange;
+        color: $dark-blue;
         border-radius: 20px;
         bottom: 20px;
         padding: 0.5rem 0;
@@ -242,7 +232,7 @@ footer {
     @include desktop {
         position: absolute;
         left: 6rem;
-        bottom: -7rem;
+        bottom: -5rem;
         z-index: 10;
     }
 }
@@ -270,12 +260,6 @@ h2 {
     @include desktop {
         max-width: 700px;
         margin: 0 auto;
-    }
-}
-
-#greeting {
-    @include desktop {
-        margin-top: 3rem;
     }
 }
 
@@ -389,20 +373,6 @@ nav {
     }
 }
 
-@include desktop {
-    #secondary-nav {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        background-color: $light-grey;
-        padding: 0 100px;
-
-        ul {
-            margin-left: auto;
-        }
-    }
-}
-
 .dropdown-items {
     display: none;
     background-color: $dark-grey;
@@ -437,6 +407,18 @@ nav {
 }
 
 // TEXT STYLING
+#logo a {
+    text-decoration: none;
+}
+
+#wordmark {
+    color: $orange;
+    margin-left: 1rem;
+
+    span {
+        color: $light-grey;
+    }
+}
 
 nav {
     font-family: $heading-font;
@@ -448,8 +430,8 @@ nav {
             z-index: 999;
 
             a {
-                background-color: $light-grey;
-                color: $dark-grey;
+                background-color: $dark-blue;
+                color: $orange;
                 display: block;
                 padding: 1.5rem;
                 text-decoration: none;
@@ -463,12 +445,12 @@ nav {
                 }
 
                 &:visited {
-                    color: $dark-grey;
+                    color: $orange;
                 }
 
                 &:hover {
-                    background-color: $dark-grey;
-                    color: $light-grey;
+                    background-color: $orange;
+                    color: $dark-blue;
                 }
             }
         }
@@ -476,20 +458,31 @@ nav {
 }
 
 .dropdown-items li a {
+    color: $dark-grey;
     background-color: $light-grey;
     opacity: 0.75;
+
+    &:visited {
+        color: $dark-grey;
+    }
+
+    &:hover {
+        background-color: $orange;
+        color: $dark-blue;
+    }
+
 }
 
 .caption {
-    font-family: $body-font;
+    font-family: $heading-font;
 }
 
 h2 {
-    color: $light-grey;
+    color: $orange;
     font-family: $heading-font;
     font-size: 2.5rem;
     text-align: center;
-    background-color: $dark-grey;
+    background-color: $dark-blue;
 }
 
 .feature {
@@ -559,6 +552,6 @@ h2 {
 }
 
 footer {
-    color: $dark-grey;
+    color: $orange;
     font-family: $body-font;
 }
