@@ -10,6 +10,7 @@
 
 body {
   background-color: #404040;
+  background-image: url("http://cdn.backgroundhost.com/backgrounds/subtlepatterns/bo_play_pattern.png");
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 100px minmax(calc(100vh - 150px - 6rem), auto) 50px;
@@ -22,8 +23,8 @@ body {
 
 @media screen and (min-width: 1026px) {
   body {
-    -ms-grid-rows: 100px minmax(calc(100vh - 250px), auto) 100px 50px;
-        grid-template-rows: 100px minmax(calc(100vh - 250px), auto) 100px 50px;
+    -ms-grid-rows: 100px minmax(calc(100vh - 230px), auto) 100px 30px;
+        grid-template-rows: 100px minmax(calc(100vh - 230px), auto) 100px 30px;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
         grid-template-areas: "header" "main" "contact" "footer";
@@ -61,18 +62,18 @@ main {
   #about-page #about-scroll {
     max-width: 700px;
     margin: 0 auto;
-    height: 550px;
+    height: calc(100vh - 150px - 6rem);
     overflow: auto;
   }
 }
 
 @media screen and (min-width: 1026px) {
   #about-page #about-scroll {
-    max-width: 900px;
+    max-width: 700px;
     margin: 0 auto;
-    height: 550px;
+    height: calc(100vh - 230px - 6rem);
     overflow: auto;
-    margin-top: 4.5rem;
+    margin-top: 3rem;
   }
 }
 
@@ -124,15 +125,20 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 50px;
+  padding: 0 50px 0 100px;
 }
 
 header #logo {
-  height: 50px;
+  height: 60px;
+}
+
+header #logo a img {
+  height: 60px;
 }
 
 @media screen and (max-width: 500px) {
   header {
+    padding: 0 50px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -164,6 +170,9 @@ header #logo {
 }
 
 @media screen and (min-width: 1026px) {
+  header {
+    padding: 0 100px 0 12rem;
+  }
   header #hamburger {
     width: 100%;
   }
@@ -223,11 +232,13 @@ footer {
 }
 
 #photo .caption {
+  font-size: 1.5rem;
   position: absolute;
-  background-color: black;
+  background-color: #000066;
   color: #F2F2F2;
-  border-radius: 10px;
+  border-radius: 20px;
   bottom: 20px;
+  padding: 0.5rem 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -246,6 +257,7 @@ footer {
   #photo {
     height: 250px;
     width: 250px;
+    margin-bottom: 3rem;
   }
 }
 
@@ -264,34 +276,47 @@ footer {
     bottom: -7rem;
     z-index: 10;
   }
-  #photo img {
-    height: 350px;
-    width: 350px;
-  }
-  #photo .caption {
-    font-size: 1.5rem;
-    border-radius: 10px;
-    bottom: 40px;
-    width: 300px;
-    left: calc(50% - 150px);
-  }
 }
 
 h2 {
   padding: 3rem;
 }
 
+@media screen and (min-width: 1026px) {
+  h2 {
+    padding: 2.5rem;
+  }
+}
+
 @media screen and (min-width: 501px) and (max-width: 1025px) {
-  section:not(#photo) {
+  #greeting,
+  #work,
+  #education,
+  #interests,
+  #technical-expertise,
+  #location,
+  #contact {
     max-width: 700px;
     margin: 0 auto;
   }
 }
 
 @media screen and (min-width: 1026px) {
-  section:not(#photo) {
-    max-width: 900px;
+  #greeting,
+  #work,
+  #education,
+  #interests,
+  #technical-expertise,
+  #location,
+  #contact {
+    max-width: 700px;
     margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1026px) {
+  #greeting {
+    margin-top: 3rem;
   }
 }
 
@@ -359,7 +384,7 @@ h2 {
   .feature .info {
     padding: 3rem;
     padding-right: 1.5rem;
-    min-height: 450px;
+    min-height: 410px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -406,7 +431,7 @@ h2 {
   .feature .icons {
     padding: 3rem;
     padding-left: 1.5rem;
-    min-height: 450px;
+    min-height: 410px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -453,7 +478,7 @@ h2 {
 
 @media screen and (min-width: 1026px) {
   .feature .icons ul li {
-    padding: 1.5rem;
+    padding: 1rem;
   }
 }
 
@@ -490,7 +515,7 @@ nav {
             align-items: center;
     width: 100%;
     background-color: #F2F2F2;
-    padding: 0 50px;
+    padding: 0 100px;
   }
   #secondary-nav ul {
     margin-left: auto;
@@ -525,7 +550,7 @@ nav {
 
 @media screen and (min-width: 1026px) {
   .dropdown-menu:hover .dropdown-items {
-    width: 20rem;
+    width: 25rem;
   }
   .dropdown-menu:hover .dropdown-items a {
     width: 100%;
@@ -585,6 +610,7 @@ h2 {
   font-family: "Orbitron", sans-serif;
   font-size: 2.5rem;
   text-align: center;
+  background-color: #404040;
 }
 
 .feature {
@@ -630,7 +656,7 @@ h2 {
 
 @media screen and (min-width: 1026px) {
   .feature .icons ul li i {
-    font-size: 7rem;
+    font-size: 5rem;
   }
 }
 
@@ -648,7 +674,7 @@ h2 {
 
 @media screen and (min-width: 1026px) {
   .feature .icons ul li img {
-    width: 110px;
+    width: 100px;
   }
 }
 

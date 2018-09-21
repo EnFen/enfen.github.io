@@ -6,15 +6,16 @@
 // LAYOUT
 body {
     background-color: $dark-grey;
+    background-image: url('http://cdn.backgroundhost.com/backgrounds/subtlepatterns/bo_play_pattern.png');
+    // background-image: url('../img/connectwork.png');
     display: grid;
-    //grid-template-rows: $header minmax(calc(100vh - calc($header + $footer)), auto) $footer;
     grid-template-rows: 100px minmax(calc(100vh - 150px - 6rem), auto) 50px;
     grid-template-columns: 1fr;
     grid-template-areas: "header""main""footer";
     grid-gap: 3rem;
 
     @include desktop {
-        grid-template-rows: 100px minmax(calc(100vh - 250px), auto) 100px 50px;
+        grid-template-rows: 100px minmax(calc(100vh - 230px), auto) 100px 30px;
         grid-template-columns: 1fr;
         grid-template-areas: "header""main""contact""footer";
         grid-gap: 0;
@@ -48,18 +49,18 @@ main {
         #about-scroll {
             max-width: 700px;
             margin: 0 auto;
-            height: 550px;
+            height: calc(100vh - 150px - 6rem);
             overflow: auto;
         }
     }
 
     @include desktop {
         #about-scroll {
-            max-width: 900px;
+            max-width: 700px;
             margin: 0 auto;
-            height: 550px;
+            height: calc(100vh - 230px - 6rem);
             overflow: auto;
-            margin-top: 4.5rem;
+            margin-top: 3rem;
         }
     }
 
@@ -110,13 +111,20 @@ header {
     display: flex;
     width: 100%;
     align-items: center;
-    padding: 0 50px;
+    padding: 0 50px 0 100px;
 
     #logo {
-        height: 50px
+        height: 60px;
+
+        a {
+            img {
+                height: 60px;
+            }
+        }
     }
 
     @include mobile {
+        padding: 0 50px;
         justify-content: space-between;
 
 
@@ -150,6 +158,8 @@ header {
     }
 
     @include desktop {
+        padding: 0 100px 0 12rem;
+
         #hamburger {
             width: 100%;
 
@@ -203,11 +213,13 @@ footer {
     }
 
     .caption {
+        font-size: 1.5rem;
         position: absolute;
-        background-color: black;
+        background-color: $dark-blue;
         color: $light-grey;
-        border-radius: 10px;
+        border-radius: 20px;
         bottom: 20px;
+        padding: 0.5rem 0;
 
         @include center;
 
@@ -218,6 +230,7 @@ footer {
     @include mobile {
         height: 250px;
         width: 250px;
+        margin-bottom: 3rem;
     }
 
     @include tablet {
@@ -231,35 +244,38 @@ footer {
         left: 6rem;
         bottom: -7rem;
         z-index: 10;
-
-        img {
-            height: 350px;
-            width: 350px;
-        }
-
-        .caption {
-            font-size: 1.5rem;
-            border-radius: 10px;
-            bottom: 40px;
-            width: 300px;
-            left: calc(50% - 150px);
-        }
     }
 }
 
 h2 {
     padding: 3rem;
+
+    @include desktop {
+        padding: 2.5rem;
+    }
 }
 
-section:not(#photo) {
+#greeting,
+#work,
+#education,
+#interests,
+#technical-expertise,
+#location,
+#contact {
     @include tablet {
         max-width: 700px;
         margin: 0 auto;
     }
 
     @include desktop {
-        max-width: 900px;
+        max-width: 700px;
         margin: 0 auto;
+    }
+}
+
+#greeting {
+    @include desktop {
+        margin-top: 3rem;
     }
 }
 
@@ -292,7 +308,7 @@ section:not(#photo) {
         @include desktop {
             padding: 3rem;
             padding-right: 1.5rem;
-            min-height: 450px;
+            min-height: 410px;
 
             @include center;
         }
@@ -317,7 +333,7 @@ section:not(#photo) {
         @include desktop {
             padding: 3rem;
             padding-left: 1.5rem;
-            min-height: 450px;
+            min-height: 410px;
 
             @include center;
         }
@@ -341,7 +357,7 @@ section:not(#photo) {
                 }
 
                 @include desktop {
-                    padding: 1.5rem;
+                    padding: 1rem;
                 }
 
             }
@@ -379,7 +395,7 @@ nav {
         align-items: center;
         width: 100%;
         background-color: $light-grey;
-        padding: 0 50px;
+        padding: 0 100px;
 
         ul {
             margin-left: auto;
@@ -412,7 +428,7 @@ nav {
     }
 
     @include desktop {
-        width: 20rem;
+        width: 25rem;
 
         a {
             width: 100%;
@@ -473,6 +489,7 @@ h2 {
     font-family: $heading-font;
     font-size: 2.5rem;
     text-align: center;
+    background-color: $dark-grey;
 }
 
 .feature {
@@ -519,7 +536,7 @@ h2 {
                     }
 
                     @include desktop {
-                        font-size: 7rem;
+                        font-size: 5rem;
                     }
                 }
 
@@ -533,7 +550,7 @@ h2 {
                     }
 
                     @include desktop {
-                        width: 110px;
+                        width: 100px;
                     }
                 }
             }
