@@ -38,10 +38,10 @@ To further capture the 'Tech' feel using colour, I selected blues and greys. Acc
 
 With the colour palete decided upon I was ready to create my first asset - the logo - using Adobe Illustrator. The final logo contains my initial ('N'), a hexagon pattern which can be viewed as a 3D cube representing the 3 aspects of 'Design', 'Development', and 'Deployment', and an arrow reminiscent of a computer cursor which points to the centre of the hexagon, which can also be seen as an archery target.
 
-Other assets I had to consider for the site included icons and background images. For my icons I used some of the free options from Font Awesome, which luckily matched well with the round Orbitron font. For the background image I wanted something minimalist, which wouldn't take attention from the primary content. I settled on a tiled pattern from a CDN site which fit well with the colour scheme and 'Tech' aesthetic.
-The final asset I required was my photo. I wanted a candid shot which showed my personality, and which also worked well with the sites colour scheme. I also put some thought into how the photo would aid the purpose of the site - so I intentionally posed for the photo so that I would be looking towards the top-right, which would direct the users gaze across the featured content in the ceter of the page, towards the navigation menus in the top-right.
+<img src="/docs/img/profile_logo.jpg" alt="Portfolio Logo" title="Logo" />
 
-* source illustrator file with logo
+Other assets I had to consider for the site included icons and background images. For my icons I used some of the free options from Font Awesome, which luckily matched well with the round Orbitron font. For the background image I wanted something minimalist, which wouldn't take attention from the primary content. I settled on a tiled pattern from a CDN site which fit well with the colour scheme and 'Tech' aesthetic.
+The final asset I required was my photo. I wanted a candid shot which showed my personality, and which worked well with the sites colour scheme. I also put some thought into how the photo would aid the purpose of the site - so I intentionally posed for the photo so that I would be looking towards the top-right, so as to direct the users gaze across the featured content in the ceter of the page, towards the navigation menus in the top-right.
 
 # Project Plan
 
