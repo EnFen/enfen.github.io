@@ -35,7 +35,7 @@ While trying to achieve this aesthetic I first settled on the 'Orbitron' font, w
 
 To best showcase the information on the site, I wanted the layout to be minimalist and clean to fit with the modern 'Tech' aesthetic and to allow lots of space for page elements to breathe. I also wanted to use 'space' to draw users to the important information on the site (About, Contact). Consequently, I felt that designing a different layout for each of the mobile, tablet, and desktop sizes was the best way to achieve this.
 
-<img src="/docs/img/wireframes/portfolio_wireframe_home_mobile.jpg" height="200" alt="Mobile Layout" title="Mobile Layout" />    <img src="/docs/img/wireframes/portfolio_wireframe_home_tablet.jpg" height="200" alt="Tablet Layout" title="Tablet Layout" />    <img src="/docs/img/wireframes/portfolio_wireframe_home_desktop.jpg" height="200" alt="Desktop Layout" title="Desktop Layout" />
+<img src="/docs/img/wireframes/portfolio_wireframe_home_mobile.jpg" height="200" alt="Mobile Wireframe" title="Mobile Wireframe" />    <img src="/docs/img/wireframes/portfolio_wireframe_home_tablet.jpg" height="200" alt="Tablet Wireframe" title="Tablet Wireframe" />    <img src="/docs/img/wireframes/portfolio_wireframe_home_desktop.jpg" height="200" alt="Desktop Wireframe" title="Desktop Wireframe" />
 
 To further capture the 'Tech' feel using colour, I selected blues and greys. Accenting with orange contrasted well with the blue, and brought some warmth to an otherwise cold palette. Far accessibility reasons, I decided on web safe colours for the orange and blue to be used on the site.
 
@@ -51,7 +51,32 @@ Other assets I had to consider for the site included icons and background images
 
 The final asset I required was my photo. I wanted a candid shot which showed my personality, and which worked well with the sites colour scheme. I also put some thought into how the photo would aid the purpose of the site - so I intentionally posed for the photo so that I would be looking towards the top-right, so as to direct the users gaze across the featured content in the ceter of the page, towards the navigation menus in the top-right.
 
-# Project Plan
+# Project Plan & Process
+The timeline and plan for the project proceeded as follows:
+Day 1
+* Brainstorming
+* Researching and sourcing assets (Fonts, Colours, Icons, Backgrounds etc.)
+Day 2 
+* Design (Wireframing)
+Day 3
+* HTML and SCSS for mobile layout
+Day 4
+* SCSS for tablet and desktop layouts, and site styling (adding in assets, colours, animations etc)
+Day 5
+* Finalising code and documentation
+
+Images of the process:
+
+<img src="/docs/img/trello_boards/trello_board_1.JPG" alt="Trello board 1" title="Trello board 1" />
+<img src="/docs/img/trello_boards/trello_board_2.JPG" alt="Trello board 2" title="Trello board 2" />
+<img src="/docs/img/trello_boards/trello_board_3.JPG" alt="Trello board 3" title="Trello board 3" />
+<img src="/docs/img/trello_boards/trello_board_4.JPG" alt="Trello board 4" title="Trello board 4" />
+<img src="/docs/img/trello_boards/trello_board_5.JPG" alt="Trello board 5" title="Trello board 5" />
+<img src="/docs/img/trello_boards/trello_board_6.JPG" alt="Trello board 6" title="Trello board 6" />
+
+* Include final trello
+
+<img src="/docs/img/screenshots/layout_2.JPG" alt="Mobile Layout" title="Mobile Layout" height="200" />    <img src="/docs/img/screenshots/layout_3.JPG" alt="Tablet Layout" title="Tablet Layout" height="200" />    <img src="/docs/img/screenshots/layout_1.JPG" alt="Desktop Layout" title="Desktop Layout" height="200" />
 
 # Q & A
 1. Describe key events in the development of the internet from the 1980s to today (max. 150 words)
