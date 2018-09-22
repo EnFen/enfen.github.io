@@ -79,8 +79,46 @@ Images of the process:
 <img src="/docs/img/screenshots/layout_2.JPG" alt="Mobile Layout" title="Mobile Layout" height="200" />    <img src="/docs/img/screenshots/layout_3.JPG" alt="Tablet Layout" title="Tablet Layout" height="200" />    <img src="/docs/img/screenshots/layout_1.JPG" alt="Desktop Layout" title="Desktop Layout" height="200" />
 
 # Q & A
-1. Describe key events in the development of the internet from the 1980s to today (max. 150 words)
+### 1.	Describe key events in the development of the internet from the 1980s to today
+The internet as we understand it today made its start in the 1980’s, originally being established as a means for university computer scientists and academics to network and share information. Some integral elements still prevalent in internet technology today, emerged and were standardised including the TCP/IP protocol suite used to move information packets between computers and their applications, and DNS, which allowed for the creation of human intuitive network addressing.
 
-2. Define and describes the relationship between fundamental aspects of the internet such as: domains, web servers, DNS, and web browsers (max. 150 words)
+Moving into the 1990’s, the potential of the internet began to be fully realised. Early in this decade Tim Berners-Lee, a researcher at CERN, developed HTML and HTTP which would soon become crucial technologies for creating the ‘World Wide Web’. Early versions of browsers (IE, Netscape) and search engines (Yahoo!, Google) speed adoption of the new technology and from this point on, the previously exclusive networks became available for widespread commercial and personal use. Consequently, an explosion of internet products and services were seen, including shopping, news, banking, dating, health, personal blogging and more.
+
+The 2000’s introduced some of the darker elements of the internet, including the spread of computer virus’, data sharing and piracy, and the ensuing need for internet regulations and security. Amidst all of this, adoption of the internet continued to grow with the integration of wireless and mobile technologies such as smart phones. The first social networks also started in this decade, which – for better or worse – meant that we were connected to each other’s lives in ways we had never been.
+
+In more recent years the legal and social aspects of the worlds largest information sharing technology have become more prominent, with leaks of national security information, the need for web neutrality, and the role that social media plays in shaping public opinions being debated and discussed. The increasing proliferation of the IoT also shows how the internet continues to permeate and influence our lives.
+
+### 2.	Define and describes the relationship between fundamental aspects of the internet such as: domains, web servers, DNS, and web browsers
+The relationship of the fundamental aspects of the internet can be explained by starting with a web browser.
+A browser is a software application which allows humans (or in some cases, machines) to make requests for files and assets stored on other computers. 
+
+A request is issued by the user of a browser by submitting the IP address of the desired files, however for humans this is most often achieved using a domain name, which is far easier to remember than the millions of possible combinations of IP address numbers. This address or domain leads to the information physically stored on a webserver.
+
+Web servers can refer to hardware or software. As hardware they represent where internet content is stored (or hosted), and these may include other software to run and optimise the information they host. As software, web servers refer to applications that ‘listen’ for requests from clients (such as browsers) and then ‘serve’ the requested information via packets back to the requestor according to predefined protocols (most often HTTP for the web).
+
+Once the web server has responded to a request, the browser parses the received information (commonly HTML, CSS and JavaScript) and if necessary, renders it to be viewed by the user.
+
+### 3.	Reflect on one aspect of the development of internet technologies and how it has contributed to the world today (max. 150 words) 
+At its core, the internet is about the sharing of information – and there is so much out there worth sharing – but for some users, that information is not readily available in a way that is easy to access, interpret, or understand.
+Sometimes this is because the user has some form of disability which makes it difficult for them to see, hear, understand or navigate through web content, and for other users, the difficulty is simply their poor or slow internet connection, or device type.
+Fortunately, people who know internet technology have realised this and sought to do something about it. This is the realm of web accessibility and equity.
+
+>"The power of the Web is in its universality. Access by everyone regardless of disability is an essential aspect." 
+>Tim Berners-Lee, W3C Director and inventor of the World Wide Web
+
+Over the years many web technologies have been being changed to accommodate accessibility needs. HTML5, for example, now includes semantically meaningful elements (e.g. ```<nav>, <section>, <img alt=””>```), which in combination with screen readers make it much easier for visually impaired users to access the web.
+
+Another fantastic example of accessibility and equity is the rise of responsive websites, which allow customised content to be delivered depending on the screen size on which the webpage is being viewed.
+
+Accessibility standards and technologies are governed by the Web Accessibility Initiative or WAI, which is a branch of the W3C standards body.
+Thanks to the efforts of these technologies and agencies, anyone, regardless of any particular constraint, has more opportunity to be connected to information than ever before – just like everyone else.
  
-3. Reflect on one aspect of the development of internet technologies and how it has contributed to the world today (max. 150 words) accessibility? Information available for everyone
+**References**
+
+Engard, B. (2018). An Internet History Timeline: From the 1960s to Now. [online] Jefferson Online. Available at: https://online.jefferson.edu/communications/internet-history-timeline/ [Accessed 22 Sep. 2018].
+Intetics. (2018). A simple history of the Internet | Intetics. [online] Available at: https://intetics.com/blog/a-simple-history-of-the-internet [Accessed 22 Sep. 2018].
+Science, L. (2018). Internet History Timeline: ARPANET to the World Wide Web. [online] Live Science. Available at: https://www.livescience.com/20727-internet-history.html [Accessed 22 Sep. 2018].
+Shuler, R. (2018). How Does the Internet Work?. [online] Web.stanford.edu. Available at: https://web.stanford.edu/class/msande91si/www-spr04/readings/week1/InternetWhitepaper.htm  [Accessed 22 Sep. 2018].
+Web Accessibility Initiative (WAI). (2018). Introduction to Web Accessibility. [online] Available at: https://www.w3.org/WAI/fundamentals/accessibility-intro/  [Accessed 22 Sep. 2018].
+Wuhcag. (2018). What is web accessibility? Let me tell you a story... - Wuhcag. [online] Available at: https://www.wuhcag.com/what-is-web-accessibility/  [Accessed 22 Sep. 2018].
+
