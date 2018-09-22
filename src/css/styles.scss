@@ -55,24 +55,6 @@ main {
         }
     }
 
-    // Restyle scrollbar
-    ::-webkit-scrollbar {
-        width: 5px;
-    }
-
-    ::-webkit-scrollbar-track {
-        background: $light-grey;
-    }
-
-    ::-webkit-scrollbar-thumb {
-        background: #888;
-        // height: 142px;
-    }
-
-    ::-webkit-scrollbar-thumb:hover {
-        background: $orange;
-    }
-
     .feature {
         .info {
             flex-wrap: wrap;
@@ -113,6 +95,14 @@ header {
 
             img {
                 height: 75px;
+            }
+        }
+
+        @include desktop {
+            transition: all 0.5s;
+
+            &:hover {
+                transform: scale(1.05);
             }
         }
     }
@@ -195,6 +185,9 @@ footer {
 #photo {
     grid-area: photo;
     margin: 0 auto;
+    height: 250px;
+    width: 250px;
+
 
     img {
         border-radius: 50%;
@@ -218,8 +211,6 @@ footer {
     }
 
     @include mobile {
-        height: 250px;
-        width: 250px;
         margin-bottom: 3rem;
     }
 
@@ -234,6 +225,12 @@ footer {
         left: 6rem;
         bottom: -5rem;
         z-index: 10;
+        transition: all 1s;
+
+        &:hover {
+            transform: scale(1.1);
+            bottom: calc(100vh / 2 - 250px);
+        }
     }
 }
 
@@ -436,6 +433,11 @@ nav {
                 padding: 1.5rem;
                 text-decoration: none;
 
+                @include mobile {
+                    background-color: $orange;
+                    color: $dark-blue;
+                }
+
                 @include tablet {
                     width: 200px;
                 }
@@ -446,15 +448,31 @@ nav {
 
                 &:visited {
                     color: $orange;
+
+                    @include mobile {
+                        color: $dark-blue;
+                    }
                 }
 
                 &:hover {
                     background-color: $orange;
                     color: $dark-blue;
+
+                    @include mobile {
+                        background-color: $dark-grey;
+                        color: $light-grey;
+                    }
                 }
             }
         }
     }
+}
+
+.feature a {
+    text-decoration: none;
+    color: $dark-grey;
+
+
 }
 
 .dropdown-items li a {
@@ -554,4 +572,28 @@ h2 {
 footer {
     color: $orange;
     font-family: $body-font;
+}
+
+// ADDDITIONAL STYLES
+
+header {
+    border-bottom: 2px solid $light-grey;
+}
+
+// Restyle scrollbar
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: $light-grey;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    // height: 142px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: $orange;
 }
