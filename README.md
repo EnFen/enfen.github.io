@@ -29,18 +29,26 @@ The site was built using HTML5 for structure and SCSS/CSS3 for styling. Upon com
 
 # Design
 For site aesthetics I wanted a slight 'Tech' feel. I felt this was an appropriate for a profile page meant to showcase technical skill, but it also spoke to my love of gaming and sci-fi / fantasy. 
-While trying to achieve this aesthetic I first settled on the 'Orbitron' font, which was sleek, geometrical, and futuristic. Soon after, I found a great pairing for it in the 'Catamaran 100' font. 
+While trying to achieve this aesthetic I first settled on the 'Orbitron' font, which was sleek, geometrical, and futuristic. Soon after, I found a great pairing for it in the 'Catamaran 100' font, which was lightweight, and matched the general shape of Orbitron. 
+
+<img src="/docs/img/font_picker.JPG" alt="Font pairing" title="Font pairing" />    <img src="/docs/img/font_picker_2.JPG" alt="Font picking" title="Font picking" />
+
 To best showcase the information on the site, I wanted the layout to be minimalist and clean to fit with the modern 'Tech' aesthetic and to allow lots of space for page elements to breathe. I also wanted to use 'space' to draw users to the important information on the site (About, Contact). Consequently, I felt that designing a different layout for each of the mobile, tablet, and desktop sizes was the best way to achieve this.
 
 <img src="/docs/img/wireframes/portfolio_wireframe_home_mobile.jpg" height="200" alt="Mobile Layout" title="Mobile Layout" />    <img src="/docs/img/wireframes/portfolio_wireframe_home_tablet.jpg" height="200" alt="Tablet Layout" title="Tablet Layout" />    <img src="/docs/img/wireframes/portfolio_wireframe_home_desktop.jpg" height="200" alt="Desktop Layout" title="Desktop Layout" />
 
 To further capture the 'Tech' feel using colour, I selected blues and greys. Accenting with orange contrasted well with the blue, and brought some warmth to an otherwise cold palette. Far accessibility reasons, I decided on web safe colours for the orange and blue to be used on the site.
 
+<img src="/docs/img/colour_picker.JPG" alt="Colour picker" title="Colour picker" />
+
 With the colour palete decided upon I was ready to create my first asset - the logo - using Adobe Illustrator. The final logo contains my initial ('N'), a hexagon pattern which can be viewed as a 3D cube representing the 3 aspects of 'Design', 'Development', and 'Deployment', and an arrow reminiscent of a computer cursor which points to the centre of the hexagon, which can also be seen as an archery target.
 
 <img src="/docs/img/profile_logo.jpg" alt="Portfolio Logo" title="Logo" />
 
 Other assets I had to consider for the site included icons and background images. For my icons I used some of the free options from Font Awesome, which luckily matched well with the round Orbitron font. For the background image I wanted something minimalist, which wouldn't take attention from the primary content. I settled on a tiled pattern from a CDN site which fit well with the colour scheme and 'Tech' aesthetic.
+
+<img src="/docs/img/iconography.JPG" alt="Portfolio Iconograpy" title="Iconography" />    <img src="/docs/img/background_sourcing_2.JPG" alt="Portfolio background sourcing" title="Background source" />
+
 The final asset I required was my photo. I wanted a candid shot which showed my personality, and which worked well with the sites colour scheme. I also put some thought into how the photo would aid the purpose of the site - so I intentionally posed for the photo so that I would be looking towards the top-right, so as to direct the users gaze across the featured content in the ceter of the page, towards the navigation menus in the top-right.
 
 # Project Plan
