@@ -237,6 +237,7 @@ footer {
     }
 
     #hamburger:hover>nav,
+    #hamburger:focus>nav,
     #hamburger:active>nav {
         display: block;
     }
@@ -293,6 +294,7 @@ nav {
 }
 
 .dropdown-menu:hover .dropdown-items,
+.dropdown-menu:focus .dropdown-items,
 .dropdown-menu:active .dropdown-items {
     position: absolute;
     display: inherit;
@@ -374,6 +376,7 @@ nav {
             }
 
             &:hover,
+            &:focus,
             &:active {
                 background-color: $orange;
                 color: $dark-blue;
@@ -402,6 +405,7 @@ nav {
         }
 
         &:hover,
+        &:focus,
         &:active {
             background-color: $orange;
             color: $dark-blue;

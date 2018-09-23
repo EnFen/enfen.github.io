@@ -345,6 +345,7 @@ footer {
     font-size: 50px;
   }
   #hamburger:hover > nav,
+  #hamburger:focus > nav,
   #hamburger:active > nav {
     display: block;
   }
@@ -402,6 +403,7 @@ nav ul li a {
 }
 
 .dropdown-menu:hover .dropdown-items,
+.dropdown-menu:focus .dropdown-items,
 .dropdown-menu:active .dropdown-items {
   position: absolute;
   display: inherit;
@@ -410,6 +412,7 @@ nav ul li a {
 
 @media screen and (max-width: 750px) {
   .dropdown-menu:hover .dropdown-items,
+  .dropdown-menu:focus .dropdown-items,
   .dropdown-menu:active .dropdown-items {
     width: 100%;
   }
@@ -417,10 +420,12 @@ nav ul li a {
 
 @media screen and (min-width: 751px) {
   .dropdown-menu:hover .dropdown-items,
+  .dropdown-menu:focus .dropdown-items,
   .dropdown-menu:active .dropdown-items {
     width: 20rem;
   }
   .dropdown-menu:hover .dropdown-items a,
+  .dropdown-menu:focus .dropdown-items a,
   .dropdown-menu:active .dropdown-items a {
     width: 100%;
   }
@@ -428,6 +433,7 @@ nav ul li a {
 
 @media screen and (min-width: 1026px) {
   .dropdown-menu:hover .dropdown-items,
+  .dropdown-menu:focus .dropdown-items,
   .dropdown-menu:active .dropdown-items {
     width: 25rem;
   }
@@ -504,14 +510,14 @@ nav li a:visited {
   }
 }
 
-nav li a:hover, nav li a:active {
+nav li a:hover, nav li a:focus, nav li a:active {
   background-color: #FF9900;
   color: #000066;
   text-shadow: none;
 }
 
 @media screen and (max-width: 750px) {
-  nav li a:hover, nav li a:active {
+  nav li a:hover, nav li a:focus, nav li a:active {
     background-color: #404040;
     color: #F2F2F2;
   }
@@ -532,7 +538,7 @@ nav li a:hover, nav li a:active {
   color: #404040;
 }
 
-.dropdown-items a:hover, .dropdown-items a:active {
+.dropdown-items a:hover, .dropdown-items a:focus, .dropdown-items a:active {
   background-color: #FF9900;
   color: #000066;
 }
