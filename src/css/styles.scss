@@ -21,7 +21,7 @@ main {
 #home-page {
     @include tablet {
         display: grid;
-        grid-template-rows: auto auto;
+        grid-template-rows: calc(358px + 8.5rem) auto;
         grid-template-areas: "greeting""photo";
     }
 
