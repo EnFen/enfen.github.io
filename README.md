@@ -2,7 +2,7 @@
 
 Link to repository: https://github.com/EnFen/portfolio_project
 
-**Link to site required**
+Link to personal profile website: https://enfen.github.io/src/
 
 ## Purpose
 This portfolio website was created to showcase me, Nathan Fenimore, with a parrticular focus on front-end development skills which may be of interest to prospective clients or employers.
