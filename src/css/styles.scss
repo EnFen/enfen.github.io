@@ -291,7 +291,8 @@ nav {
     display: none;
 }
 
-.dropdown-menu:hover .dropdown-items {
+.dropdown-menu:hover .dropdown-items,
+.dropdown-menu:active .dropdown-items {
     position: absolute;
     display: inherit;
     right: 0;
@@ -371,7 +372,8 @@ nav {
                 }
             }
 
-            &:hover {
+            &:hover,
+            &:active {
                 background-color: $orange;
                 color: $dark-blue;
                 text-shadow: none;
@@ -398,7 +400,8 @@ nav {
             color: $dark-grey;
         }
 
-        &:hover {
+        &:hover,
+        &:active {
             background-color: $orange;
             color: $dark-blue;
         }
