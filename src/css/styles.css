@@ -344,7 +344,8 @@ footer {
   #hamburger i {
     font-size: 50px;
   }
-  #hamburger:hover > nav {
+  #hamburger:hover > nav,
+  #hamburger:active > nav {
     display: block;
   }
 }
