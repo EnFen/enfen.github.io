@@ -10,7 +10,7 @@
 
 // TABLET STYLES
 @mixin tablet {
-    @media screen and (min-width: 751px) and (max-width: 1025px) {
+    @media screen and (min-width: 751px) {
         @content;
     }
 }
@@ -30,4 +30,44 @@
     display: flex;
     justify-content: center;
     width: 100%;
+}
+
+// Space evenly and wrap
+@mixin even_wrap {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+// Circle
+@mixin circle($width, $height) {
+    border-radius: 50%;
+    height: $height;
+    width: $width;
+}
+
+// STYLES
+
+// ANIMATIONS
+
+// Grow on hover
+@mixin grow {
+    transition: all 0.5s;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+// Grow and rise on hover
+@mixin grow_rise {
+    transition: all 1s;
+
+    &:hover {
+        bottom: calc(100vh / 2 - 250px);
+        box-shadow: $shadow_3;
+        transform: scale(1.1);
+    }
 }
