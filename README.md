@@ -30,7 +30,7 @@ The relationship between the pages and stylesheets to be used on the site can be
 
 
 ## Target audience
-As indicated in the 'Purpose' section. the target audience of the website is potential clients or employers seeking web development services. It is likely that they will be 
+As indicated in the 'Purpose' section. the target audience of the website is potential clients or employers seeking web development services. though some of the site contains some 'fum stuff' that I hope might be appealing to anyone :}
 
 ## Tech stack
 The site was built using HTML5 for structure and SCSS/CSS3 for styling. Upon completion it was deployed through Git Pages.
