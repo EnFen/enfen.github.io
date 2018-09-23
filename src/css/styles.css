@@ -55,17 +55,6 @@ header #logo a img {
           filter: drop-shadow(-4px 2px 5px #000000);
 }
 
-@media screen and (min-width: 1026px) {
-  header #logo {
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-  }
-  header #logo:hover {
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
-  }
-}
-
 header #wordmark {
   margin-left: 1rem;
 }
@@ -178,15 +167,6 @@ h2 {
     left: 6rem;
     bottom: -5rem;
     margin-bottom: 0;
-    -webkit-transition: all 1s;
-    transition: all 1s;
-  }
-  #photo:hover {
-    bottom: calc(100vh / 2 - 250px);
-    -webkit-box-shadow: -0.4rem 0.4rem 0.8rem #000000;
-            box-shadow: -0.4rem 0.4rem 0.8rem #000000;
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
   }
 }
 
@@ -197,8 +177,6 @@ h2 {
     height: calc(100vh - 150px - 6rem);
     overflow: auto;
     border-radius: 20px 0 0 20px;
-    -webkit-box-shadow: -0.5rem 0.5rem 1rem #000000;
-            box-shadow: -0.5rem 0.5rem 1rem #000000;
   }
 }
 
@@ -464,6 +442,17 @@ header {
   text-decoration: none;
 }
 
+@media screen and (min-width: 1026px) {
+  #logo a {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  #logo a:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+}
+
 #wordmark {
   color: #FF9900;
 }
@@ -580,6 +569,27 @@ nav li a:hover {
   background-color: #FF9900;
   color: #000066;
   border-radius: 20px;
+}
+
+@media screen and (min-width: 1026px) {
+  #photo {
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  #photo:hover {
+    bottom: calc(100vh / 2 - 250px);
+    -webkit-box-shadow: -0.4rem 0.4rem 0.8rem #000000;
+            box-shadow: -0.4rem 0.4rem 0.8rem #000000;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@media screen and (min-width: 751px) {
+  #about-scroll {
+    -webkit-box-shadow: -0.5rem 0.5rem 1rem #000000;
+            box-shadow: -0.5rem 0.5rem 1rem #000000;
+  }
 }
 
 h2 {
