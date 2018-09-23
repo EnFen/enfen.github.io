@@ -2,6 +2,8 @@
 
 Link to repository: https://github.com/EnFen/portfolio_project
 
+**Link to site required**
+
 ## Purpose
 This portfolio website was created to showcase me, Nathan Fenimore, with a parrticular focus on my front-end development skills for prospective clients or employers.
 
@@ -19,7 +21,13 @@ The relationship between the pages and stylesheets to be used on the site can be
 
 ## Screenshots
 
-* Screenshots of final site
+<img src="/docs/img/final_site/desktop_home.JPG" alt="Portfolio home page desktop" title="Home page desktop" />
+<img src="/docs/img/final_site/desktop_contact_w_link_tooltip.JPG" alt="Portfolio contact page" title="Contact page deskyop w/ link tooltip" />
+<img src="/docs/img/final_site/tablet_profile_home.JPG" alt="Portfolio home page tablet" title="Home page tablet profile" />
+<img src="/docs/img/final_site/tablet_landscape_about_w_dropdown.JPG" alt="Portfolio about page tablet" title="About page tablet landscape" />
+<img src="/docs/img/final_site/mobile_profile_home.JPG" alt="Portfolio home page mobile" title="Home page mobile />
+<img src="/docs/img/final_site/mobile_profile_about_w_dropdown.JPG" alt="Portfolio about page mobile" title="About page mobile w/ hamburger dropdown" />
+
 
 ## Target audience
 As indicated in the 'Purpose' section. the target audience of the website is potential clients or employers seeking web development services. It is likely that they will be 
@@ -65,7 +73,7 @@ Day 4
 Day 5
 * Finalising code and documentation
 
-Images of the process:
+### Images of my plan:
 
 <img src="/docs/img/trello_boards/trello_board_1.JPG" alt="Trello board 1" title="Trello board 1" />
 <img src="/docs/img/trello_boards/trello_board_2.JPG" alt="Trello board 2" title="Trello board 2" />
@@ -74,7 +82,7 @@ Images of the process:
 <img src="/docs/img/trello_boards/trello_board_5.JPG" alt="Trello board 5" title="Trello board 5" />
 <img src="/docs/img/trello_boards/trello_board_6.JPG" alt="Trello board 6" title="Trello board 6" />
 
-* Include final trello
+### Images of the process:
 
 <img src="/docs/img/screenshots/layout_2.JPG" alt="Mobile Layout" title="Mobile Layout" height="200" />    <img src="/docs/img/screenshots/layout_3.JPG" alt="Tablet Layout" title="Tablet Layout" height="200" />    <img src="/docs/img/screenshots/layout_1.JPG" alt="Desktop Layout" title="Desktop Layout" height="200" />
 
