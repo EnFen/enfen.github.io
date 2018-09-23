@@ -48,6 +48,8 @@ To best showcase the information on the site, I wanted the layout to be minimali
 
 <img src="/docs/img/wireframes/portfolio_wireframe_home_mobile.jpg" height="200" alt="Mobile Wireframe" title="Mobile Wireframe" />    <img src="/docs/img/wireframes/portfolio_wireframe_home_tablet.jpg" height="200" alt="Tablet Wireframe" title="Tablet Wireframe" />    <img src="/docs/img/wireframes/portfolio_wireframe_home_desktop.jpg" height="200" alt="Desktop Wireframe" title="Desktop Wireframe" />
 
+[See more wireframes](/docs/img/wireframes)
+
 To further capture the 'Tech' feel using colour, I selected blues and greys, and then accented these with orange which contrasted well with the blue, and brought some warmth to an otherwise cold palette. Far accessibility reasons, I decided on web safe colours for the orange and blue to be used on the site, meaning the design will remiain fairly robust on devices with a limited colour palette.
 
 <img src="/docs/img/colour_picker.JPG" alt="Colour picker" title="Colour picker" height="200" />
