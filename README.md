@@ -61,17 +61,26 @@ The final asset I required was my photo. I wanted a candid shot which showed my 
 
 # Project Plan & Process
 The timeline and plan for the project proceeded as follows:
+
 Day 1
 * Brainstorming
 * Researching and sourcing assets (Fonts, Colours, Icons, Backgrounds etc.)
+
 Day 2 
 * Design (Wireframing)
+* Create Logo
+
 Day 3
 * HTML and SCSS for mobile layout
+
 Day 4
 * SCSS for tablet and desktop layouts, and site styling (adding in assets, colours, animations etc)
+
 Day 5
 * Finalising code and documentation
+
+Day 6 and beyond...
+* Tweaking and enhancing functonality
 
 ### Images of my plan:
 
