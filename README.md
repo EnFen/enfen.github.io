@@ -27,8 +27,8 @@ The following are images show the final site, and some features on different dev
 <img src="/docs/img/final_site/desktop_contact_w_link_tooltip.JPG" alt="Portfolio contact page" title="Contact page deskyop w/ link tooltip" />
 <img src="/docs/img/final_site/tablet_profile_home.JPG" alt="Portfolio home page tablet" title="Home page tablet profile" />
 <img src="/docs/img/final_site/tablet_landscape_about_w_dropdown.JPG" alt="Portfolio about page tablet" title="About page tablet landscape" />
-<img src="/docs/img/final_site/mobile_profile_home.JPG" alt="Portfolio home page mobile" title="Home page mobile />
-<img src="/docs/img/final_site/mobile_profile_about_w_dropdown.JPG" alt="Portfolio about page mobile" title="About page mobile w/ hamburger dropdown" />
+<img src="/docs/img/final_site/mobile_profile_home.JPG" alt="Portfolio home page mobile" title="Home page mobile" />
+<img src="/docs/img/final_site/mobile_profile_about_w_dropdown.JPG" alt="Portfolio about page mobile" title="About page mobile with hamburger dropdown" />
 
 
 ## Target audience
@@ -87,12 +87,12 @@ Day 6 and beyond...
 
 ### Images of my plan:
 
-<img src="/docs/img/trello_boards/trello_board_1.JPG" alt="Trello board 1" title="Trello board 1" />
-<img src="/docs/img/trello_boards/trello_board_2.JPG" alt="Trello board 2" title="Trello board 2" />
-<img src="/docs/img/trello_boards/trello_board_3.JPG" alt="Trello board 3" title="Trello board 3" />
-<img src="/docs/img/trello_boards/trello_board_4.JPG" alt="Trello board 4" title="Trello board 4" />
-<img src="/docs/img/trello_boards/trello_board_5.JPG" alt="Trello board 5" title="Trello board 5" />
-<img src="/docs/img/trello_boards/trello_board_6.JPG" alt="Trello board 6" title="Trello board 6" />
+<img src="/docs/img/trello_boards/trello_board_1.JPG" alt="Trello board 1" title="Trello board 1" height="300" />
+<img src="/docs/img/trello_boards/trello_board_2.JPG" alt="Trello board 2" title="Trello board 2" height="300" />
+<img src="/docs/img/trello_boards/trello_board_3.JPG" alt="Trello board 3" title="Trello board 3" height="300" />
+<img src="/docs/img/trello_boards/trello_board_4.JPG" alt="Trello board 4" title="Trello board 4" height="300" />
+<img src="/docs/img/trello_boards/trello_board_5.JPG" alt="Trello board 5" title="Trello board 5" height="300" />
+<img src="/docs/img/trello_boards/trello_board_6.JPG" alt="Trello board 6" title="Trello board 6" height="300" />
 
 ### Images of the process:
 
@@ -139,9 +139,14 @@ Thanks to the efforts of these technologies and agencies, anyone, regardless of 
 **References**
 
 Engard, B. (2018). An Internet History Timeline: From the 1960s to Now. [online] Jefferson Online. Available at: https://online.jefferson.edu/communications/internet-history-timeline/ [Accessed 22 Sep. 2018].
+
 Intetics. (2018). A simple history of the Internet | Intetics. [online] Available at: https://intetics.com/blog/a-simple-history-of-the-internet [Accessed 22 Sep. 2018].
+
 Science, L. (2018). Internet History Timeline: ARPANET to the World Wide Web. [online] Live Science. Available at: https://www.livescience.com/20727-internet-history.html [Accessed 22 Sep. 2018].
+
 Shuler, R. (2018). How Does the Internet Work?. [online] Web.stanford.edu. Available at: https://web.stanford.edu/class/msande91si/www-spr04/readings/week1/InternetWhitepaper.htm  [Accessed 22 Sep. 2018].
+
 Web Accessibility Initiative (WAI). (2018). Introduction to Web Accessibility. [online] Available at: https://www.w3.org/WAI/fundamentals/accessibility-intro/  [Accessed 22 Sep. 2018].
+
 Wuhcag. (2018). What is web accessibility? Let me tell you a story... - Wuhcag. [online] Available at: https://www.wuhcag.com/what-is-web-accessibility/  [Accessed 22 Sep. 2018].
 
