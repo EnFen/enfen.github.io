@@ -41,6 +41,12 @@
     width: 100%;
 }
 
+// Window
+@mixin window {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
 // Circle
 @mixin circle($width, $height) {
     border-radius: 50%;

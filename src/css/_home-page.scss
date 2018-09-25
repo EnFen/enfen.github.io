@@ -12,8 +12,7 @@
     grid-area: greeting;
 
     @include tablet {
-        max-width: 700px;
-        margin: 0 auto;
+        @include window;
     }
 }
 
