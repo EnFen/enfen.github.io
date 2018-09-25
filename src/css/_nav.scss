@@ -1,0 +1,157 @@
+// LAYOUT
+
+@include mobile {
+    #hamburger i {
+        font-size: 50px;
+    }
+
+    #hamburger:hover>nav,
+    #hamburger:focus>nav,
+    #hamburger:active>nav {
+        display: block;
+    }
+}
+
+@include tablet {
+    #hamburger {
+        width: 100%;
+
+        i {
+            display: none;
+        }
+
+        ul:not(.dropdown-items) {
+            display: flex;
+
+            li:first-child {
+                margin-left: auto;
+            }
+        }
+    }
+}
+
+nav {
+    font-family: $heading-font;
+    font-size: 1.5rem;
+    text-align: center;
+
+    @include mobile {
+        display: none;
+        position: absolute;
+        right: 0;
+        width: calc(100vw - 100px);
+    }
+
+    ul {
+        li {
+            z-index: 999;
+
+            a {
+                display: block;
+                padding: 1.5rem;
+
+                @include tablet {
+                    width: 200px;
+                }
+            }
+        }
+    }
+}
+
+.dropdown-items {
+    display: none;
+}
+
+.dropdown-menu:hover .dropdown-items,
+.dropdown-menu:focus .dropdown-items,
+.dropdown-menu:active .dropdown-items {
+    position: absolute;
+    display: inherit;
+    right: 0;
+
+    @include mobile {
+        width: 100%;
+    }
+
+    @include tablet {
+        width: 20rem;
+
+        a {
+            width: 100%;
+        }
+    }
+
+    @include desktop {
+        width: 25rem;
+    }
+}
+
+// STYLING
+
+#hamburger i {
+    color: $orange;
+    text-shadow: $shadow_4;
+}
+
+nav {
+    text-shadow: $shadow_4;
+
+    li {
+        list-style: none;
+
+        a {
+            background-color: $dark-blue;
+            color: $orange;
+            text-decoration: none;
+
+            @include mobile {
+                background-color: $orange;
+                color: $dark-blue;
+                text-shadow: none;
+            }
+
+            &:visited {
+                color: $orange;
+
+                @include mobile {
+                    color: $dark-blue;
+                }
+            }
+
+            &:hover,
+            &:focus,
+            &:active {
+                background-color: $orange;
+                color: $dark-blue;
+                text-shadow: none;
+
+                @include mobile {
+                    background-color: $dark-grey;
+                    color: $light-grey;
+                }
+            }
+        }
+    }
+}
+
+.dropdown-items {
+    background-color: $dark-grey;
+
+    a {
+        color: $dark-grey;
+        background-color: $light-grey;
+        opacity: 0.75;
+        text-shadow: none;
+
+        &:visited {
+            color: $dark-grey;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: $orange;
+            color: $dark-blue;
+        }
+    }
+}

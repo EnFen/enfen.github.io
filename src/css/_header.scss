@@ -1,0 +1,65 @@
+// LAYOUT
+
+header {
+    @include center;
+    justify-content: initial;
+    padding: 0 50px 0 100px;
+
+    #logo {
+        height: 75px;
+
+        a {
+            display: flex;
+            align-items: center;
+
+            img {
+                height: 75px;
+            }
+        }
+    }
+
+    #wordmark {
+        margin-left: 1rem;
+    }
+
+    @include mobile {
+        padding: 0 50px;
+        justify-content: space-between;
+    }
+
+    @include desktop {
+        padding: 0 100px 0 8rem;
+    }
+}
+
+// STYLING
+
+header,
+footer {
+    background-color: $dark-blue;
+}
+
+header {
+    border-bottom: 2px solid $light-grey;
+    box-shadow: 0px 0.5rem 1rem #000000;
+}
+
+#logo a {
+    text-decoration: none;
+
+    @include desktop {
+        @include grow;
+    }
+
+    img {
+        filter: drop-shadow(-4px 2px 5px #000000);
+    }
+}
+
+#wordmark {
+    color: $orange;
+
+    span {
+        color: $light-grey;
+    }
+}

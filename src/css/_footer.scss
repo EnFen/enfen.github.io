@@ -1,0 +1,14 @@
+// LAYOUT
+
+footer {
+    grid-area: footer;
+    font-family: $body-font;
+    @include center;
+}
+
+// STYLING
+
+footer {
+    color: $orange;
+    text-shadow: $shadow_1;
+}

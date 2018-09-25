@@ -1,0 +1,33 @@
+// LAYOUT
+
+#contact {
+    @include tablet {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+}
+
+// STYLING
+
+#contact {
+    @include tablet {
+        box-shadow: $shadow_1;
+    }
+}
+
+@include tablet {
+
+    #contact {
+        h2 {
+            border-radius: 20px 20px 0 0;
+        }
+
+        .info {
+            border-radius: 0 0 0 20px;
+        }
+
+        .icons {
+            border-radius: 0 0 20px 0;
+        }
+    }
+}

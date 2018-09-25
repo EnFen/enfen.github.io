@@ -1,0 +1,58 @@
+// LAYOUT
+
+#work,
+#education,
+#interests,
+#technical-expertise,
+#location {
+    @include tablet {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+}
+
+#about-page {
+    @include tablet {
+        #about-scroll {
+            max-width: 700px;
+            margin: 0 auto;
+            height: calc(100vh - 150px - 6rem);
+            overflow: auto;
+            border-radius: 20px 0 0 20px;
+        }
+    }
+
+    .feature {
+
+        .info,
+        .icons {
+            flex-wrap: wrap;
+
+            @include tablet {
+                min-height: 410px;
+            }
+
+            li {
+                font-size: 0.9em;
+            }
+        }
+    }
+}
+
+// STYLING
+
+#work,
+#education,
+#interests,
+#technical-expertise,
+#location {
+    @include tablet {
+        box-shadow: $shadow_1;
+    }
+}
+
+@include tablet {
+    #about-scroll {
+        box-shadow: $shadow_1;
+    }
+}

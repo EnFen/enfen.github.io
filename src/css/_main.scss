@@ -1,0 +1,126 @@
+// LAYOUT
+
+main {
+    grid-area: main;
+}
+
+h2 {
+    font-family: $heading-font;
+    padding: 3rem;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.feature {
+    font-family: $body-font;
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+    text-align: center;
+    @include center;
+
+    @include mobile {
+        flex-wrap: wrap;
+    }
+
+    .info,
+    .icons {
+        @include mobile {
+            padding: 3rem 3rem 1.5rem;
+        }
+
+        @include tablet {
+            padding: 3rem;
+            padding-right: 1.5rem;
+            min-height: 350px;
+            @include center;
+        }
+
+        @include desktop {
+            min-height: 400px;
+        }
+    }
+
+    .info {
+        @include mobile {
+            @include center;
+            flex-wrap: wrap;
+
+            li {
+                font-size: 1.75rem;
+
+                &:first-of-type {
+                    margin-top: 1.5rem;
+                }
+            }
+        }
+    }
+
+    .icons {
+        @include mobile {
+            width: 100%;
+        }
+
+        ul {
+            @include even_wrap;
+
+            li {
+                width: 50%;
+
+                @include mobile {
+                    padding: 2rem;
+                }
+
+                @include tablet {
+                    padding: 1rem;
+                }
+
+                i {
+                    font-size: 5rem;
+                }
+
+                img {
+                    width: 100px;
+                }
+            }
+        }
+    }
+}
+
+// STYLING
+
+h2 {
+    color: $orange;
+    background-color: $dark-blue;
+    text-shadow: $shadow_5;
+
+}
+
+.feature {
+    color: $dark-grey;
+
+    a {
+        text-decoration: none;
+        color: $dark-grey;
+    }
+
+    .info,
+    .icons {
+        background-color: $light-grey;
+
+        ul {
+            li {
+                list-style: none;
+            }
+        }
+    }
+
+    .icons {
+        a {
+            text-decoration: none;
+
+            &:visited {
+                color: $dark-grey;
+            }
+        }
+    }
+}
