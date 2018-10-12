@@ -108,7 +108,7 @@ Moving into the 1990’s, the potential of the internet began to be fully realis
 
 The 2000’s introduced some of the darker elements of the internet, including the spread of computer viruses, data sharing and piracy, and the ensuing need for internet regulations and security. Amidst all of this, adoption of the internet continued to grow due to integration with wireless and mobile technologies, such as smart phones. The first social networks also started in this decade, which for better or worse meant that we were connected to each other’s lives in ways we had never been.
 
-In more recent years the legal and social aspects of the worlds largest information sharing technology have become more prominent, with leaks of national security information, the need for web neutrality, and how the internet is being used to shaping public opinion, being debated and discussed. The increasing proliferation of the IoT also shows how the internet continues to permeate and influence our lives.
+In more recent years the legal and social aspects of the worlds largest information sharing technology have become more prominent, with leaks of national security information, the need for web neutrality, and how the internet is being used to shape public opinion being debated and discussed. The increasing proliferation of the IoT also shows how the internet continues to permeate and influence our lives.
 
 ### 2.	Define and describe the relationship between fundamental aspects of the internet such as: domains, web servers, DNS, and web browsers
 The relationship of the fundamental aspects of the internet can be explained by starting with a web browser.
@@ -121,7 +121,7 @@ Web servers can refer to hardware or software. As hardware they represent the lo
 
 Once the web server has responded to a request, the browser parses the received information (commonly HTML, CSS and JavaScript) and if necessary, renders it to be viewed by the user.
 
-### 3.	Reflect on one aspect of the development of internet technologies and how it has contributed to the world today (max. 150 words) 
+### 3.	Reflect on one aspect of the development of internet technologies and how it has contributed to the world today
 At its core, the internet is about the sharing of information – and there is so much out there _worth_ sharing – but for some users, that information is not readily available in a way that is easy to access, interpret, or understand.
 Sometimes this is because the user has some form of disability which makes it difficult for them to see, hear, comprehend or navigate through web content, and for other users, the difficulty may be poor or slow internet connection, device type, or some other barrier.
 Fortunately, people who know internet technology have recognised these problems and endeavoured to do something about it. This is the realm of web accessibility and equity.
